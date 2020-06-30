@@ -956,7 +956,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-surefire-plugin</artifactId>
-          <version>2.19.1</version>
+          <version>3.0.0-M5</version>
           <configuration>
             <argLine>@{argLine} -Djava.net.preferIPv4Stack=true</argLine>
             <excludesFile>${build.path}/surefire/${surefire.excludesFile}</excludesFile>
@@ -964,7 +964,6 @@
             <rerunFailingTestsCount>${surefire.rerunFailingTestsCount}</rerunFailingTestsCount>
             <redirectTestOutputToFile>${test.output.redirect}</redirectTestOutputToFile>
             <reuseForks>false</reuseForks>
-            <runOrder>alphabetical</runOrder>
             <systemPropertyVariables>
               <alluxio.test.mode>true</alluxio.test.mode>
               <jacoco-agent.append>true</jacoco-agent.append>
